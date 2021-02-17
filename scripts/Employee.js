@@ -1,4 +1,4 @@
-export const employees = (employeeObject, employeeComputer) => {
+export const employees = (employeeObject, employeeComputer, employeeDepartment) => {
         
     return `
     <div class="employee">
@@ -6,6 +6,7 @@ export const employees = (employeeObject, employeeComputer) => {
         <div class="employeeDetails">
             <p>Age: ${employeeObject.age}</p>
             <p>Computer: ${employeeComputer[0].year} ${employeeComputer[0].model}</p>
+            <p>Department: ${employeeDepartment.name}</p>
             </div>
             `
 }
