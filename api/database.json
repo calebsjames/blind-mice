@@ -33,7 +33,8 @@
             "lastName": "Ittycheriah",
             "age": 24,
             "computerId": 1,
-            "departmentId": 2
+            "departmentId": 2,
+            "locationId": 2
         },
         {
             "id": 2,
@@ -41,7 +42,8 @@
             "lastName": "James",
             "age": 35,
             "computerId": 2,
-            "departmentId": 1
+            "departmentId": 1,
+            "locationId": 1
         },
         {
             "id": 1,
@@ -49,7 +51,8 @@
             "lastName": "Benjamin",
             "age": 5,
             "computerId": 3,
-            "departmentId": 3
+            "departmentId": 3,
+            "locationId": 3
         },
         {
             "id": 1,
@@ -57,7 +60,8 @@
             "lastName": "Shackelton",
             "age": 35,
             "computerId": 4,
-            "departmentId": 3
+            "departmentId": 3,
+            "locationId": 1
         },
         {
             "id": 1,
@@ -65,7 +69,8 @@
             "lastName": "Bukowski",
             "age": 84,
             "computerId": 5,
-            "departmentId": 4
+            "departmentId": 4,
+            "locationId": 4
         }
     ],
     "departments": [
@@ -84,6 +89,24 @@
         {
             "id": 4,
             "name": "Q.A."
+        }
+    ],
+    "locations": [
+        {
+            "id": 1,
+            "name": "Nashville"
+        },
+        {
+            "id": 2,
+            "name": "Atlanta"
+        },
+        {
+            "id": 3,
+            "name": "Los Angeles"
+        },
+        {
+            "id": 4,
+            "name": "Memphis"
         }
     ]
 }

@@ -3,6 +3,7 @@ import { getComputers, useComputers } from "./ComputerProvider.js";
 import { getDepartments, useDepartments } from "./DepartmentProvider.js";
 import { employees } from "./Employee.js";
 import { getEmployees, useEmployees } from "./EmployeeProvider.js";
+import { getLocations, useLocations } from "./LocationProvider.js";
 
 //define event hub for listening
 const eventHub = document.querySelector("main")
@@ -17,20 +18,22 @@ export const employeesList = () => {
         //fetch employeess
         .then(getComputers)
         .then(getDepartments)
+        .then(getLocations)
         .then(() => {
         //assign the fetch call to a variable
         const employeesArray = useEmployees()
         const computerArray = useComputers()
-        const departments = useDepartments()
+        const departmentsArray = useDepartments()
+        const locationsArray = useLocations()
         //render to DOM with said variable
-        employeesToDom(employeesArray, computerArray, departments)
+        employeesToDom(employeesArray, computerArray, departmentsArray, locationsArray)
         }
     )}
 
 
 
 //export function to put employee slices on DOM
-const employeesToDom = (allEmployees, allComputers, allDepartments) => {
+const employeesToDom = (allEmployees, allComputers, allDepartments, allLocations) => {
     debugger
     //Iterate through the employees with .map and insert it into innerHTML
     //This will be the main content of the cards
@@ -44,8 +47,12 @@ const employeesToDom = (allEmployees, allComputers, allDepartments) => {
             const employeeDapartment = allDepartments.find(
                 dep => dep.id === employeeObject.departmentId
             )
-                console.log(employeeObject, employeeComputer, employeeDapartment)
-                return employees(employeeObject, employeeComputer, employeeDapartment)
+
+            const employeeLocation = allLocations.find(
+                loc => loc.id === employeeObject.locationId
+            )
+                console.log(employeeObject, employeeComputer, employeeDapartment, employeeLocation)
+                return employees(employeeObject, employeeComputer, employeeDapartment, employeeLocation)
             }).join("")
 
             //pass employeeObject and the matching computer to employees()
