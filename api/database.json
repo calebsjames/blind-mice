@@ -31,30 +31,35 @@
             "id": 1,
             "firstName": "Rainu",
             "lastName": "Ittycheriah",
+            "age": 24,
             "computerId": 1
         },
         {
             "id": 2,
             "firstName": "Caleb",
             "lastName": "James",
+            "age": 35,
             "computerId": 2
         },
         {
             "id": 1,
             "firstName": "Ruby",
             "lastName": "Benjamin",
+            "age": 5,
             "computerId": 3
         },
         {
             "id": 1,
             "firstName": "Emily",
             "lastName": "Shackelton",
+            "age": 35,
             "computerId": 4
         },
         {
             "id": 1,
             "firstName": "Charles",
             "lastName": "Bukowski",
+            "age": 84,
             "computerId": 5
         }
     ]
