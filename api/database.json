@@ -33,7 +33,8 @@
             "lastName": "Ittycheriah",
             "age": 24,
             "computerId": 1,
-            "departmentId": 2
+            "departmentId": 2,
+            "locationId": 2
         },
         {
             "id": 2,
@@ -41,31 +42,35 @@
             "lastName": "James",
             "age": 35,
             "computerId": 2,
-            "departmentId": 1
+            "departmentId": 1,
+            "locationId": 1
         },
         {
-            "id": 1,
+            "id": 3,
             "firstName": "Ruby",
             "lastName": "Benjamin",
             "age": 5,
             "computerId": 3,
-            "departmentId": 3
+            "departmentId": 3,
+            "locationId": 3
         },
         {
-            "id": 1,
-            "firstName": "Emily",
-            "lastName": "Shackelton",
+            "id": 4,
+            "firstName": "Joseph",
+            "lastName": "Heller",
             "age": 35,
             "computerId": 4,
-            "departmentId": 3
+            "departmentId": 3,
+            "locationId": 1
         },
         {
-            "id": 1,
+            "id": 5,
             "firstName": "Charles",
             "lastName": "Bukowski",
             "age": 84,
             "computerId": 5,
-            "departmentId": 4
+            "departmentId": 4,
+            "locationId": 4
         }
     ],
     "departments": [
@@ -84,6 +89,84 @@
         {
             "id": 4,
             "name": "Q.A."
+        }
+    ],
+    "locations": [
+        {
+            "id": 1,
+            "name": "Nashville"
+        },
+        {
+            "id": 2,
+            "name": "Atlanta"
+        },
+        {
+            "id": 3,
+            "name": "Los Angeles"
+        },
+        {
+            "id": 4,
+            "name": "Memphis"
+        }
+    ],
+    "customers": [
+        {
+            "id": 1,
+            "name": "Juniper Distribution"
+        },
+        {
+            "id": 2,
+            "name": "ACME Rockets"
+        },
+        {
+            "id": 3,
+            "name": "Sunpath"
+        },
+        {
+            "id": 4,
+            "name": "Cookie Composites"
+        }
+    ],
+    "employeeCustomers": [
+        {
+            "id": 1,
+            "customerId": 1,
+            "employeeId": 1
+        },
+        {
+            "id": 2,
+            "customerId": 2,
+            "employeeId": 1
+        },
+        {
+            "id": 3,
+            "customerId": 3,
+            "employeeId": 2
+        },
+        {
+            "id": 4,
+            "customerId": 4,
+            "employeeId": 2
+        },
+        {
+            "id": 5,
+            "customerId": 1,
+            "employeeId": 3
+        },
+        {
+            "id": 6,
+            "customerId": 2,
+            "employeeId": 4
+        },
+        {
+            "id": 7,
+            "customerId": 1,
+            "employeeId": 4
+        },
+        {
+            "id": 8,
+            "customerId": 2,
+            "employeeId": 3
         }
     ]
 }
